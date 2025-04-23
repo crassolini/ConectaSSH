@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm
+.idea/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+*.env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Caches
+*.log
+*.pot
+*.mo
+*.bak
+*.swp
+*.swo
+*.swn
+*.out
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python egg distribution (if applicable)
+.eggs/
+
+# Coverage directory
+.coverage
+.coverage.*
+nosetests.xml
+test_*.xml
+*.coveragerc
+
+# PyInstaller
+*.spec
+
+# SQLite
+*.sqlite3
+
+# User-specific files (Windows)
+Thumbs.db
+Desktop.ini
+
+# Dependency management files
+Pipfile.lock
+poetry.lock
+/users/
