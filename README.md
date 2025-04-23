@@ -10,7 +10,7 @@ sudo apt install sshpass
 
 
 
-## Gerar novo executável (somente quando houver alteração no código)
+## Gerar executável
 
 Passo a Passo para Criar um Executável no PyCharm
 
