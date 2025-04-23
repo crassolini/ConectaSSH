@@ -17,8 +17,13 @@ ENV/
 
 # Build directories
 build/
-dist/
+dist/*
+!dist/main
+users/
 *.egg-info/
+
+# Ignorar arquivos de usuários (base criptografada)
+users/*.json.encrypted
 
 # Caches
 *.log
@@ -57,4 +62,3 @@ Desktop.ini
 # Dependency management files
 Pipfile.lock
 poetry.lock
-/users/
