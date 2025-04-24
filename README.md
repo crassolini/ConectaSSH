@@ -145,3 +145,6 @@ pyinstaller --onefile --windowed --distpath=./dist --workpath=./build --specpath
 
 Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).  
 Saiba mais sobre essa licença em [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
+O ícone utilizado neste projeto foi criado por [Freepik](https://www.freepik.com) e está disponível sob a licença "Free PNG".
+
