@@ -18,7 +18,7 @@ ENV/
 # Build directories
 build/
 dist/*
-!dist/main
+!dist/conectassh
 users/
 *.egg-info/
 

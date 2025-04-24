@@ -29,7 +29,7 @@
 ### 1. Clone o repositório
 
 ```
-git clone https://github.com/seu-usuario/conectassh.git
+git clone https://github.com/crassolini/ConectaSSH.git conectassh
 cd conectassh
 ```
 
@@ -74,8 +74,8 @@ Version=1.0
 Type=Application
 Name=ConectaSSH
 Comment=Gerenciador gráfico de conexões SSH seguras
-Exec=/CAMINHO/ABSOLUTO/DO/EXECUTAVEL
-Icon=/CAMINHO/DO/ICONE/conectassh.png
+Exec=/opt/conectassh/conectassh
+Icon=/opt/conectassh/icon.png
 Terminal=false
 Categories=Utility;Network;
 StartupNotify=true
@@ -98,6 +98,10 @@ chmod +x ~/.local/share/applications/conectassh.desktop
 update-desktop-database ~/.local/share/applications
 ```
 Agora você poderá abrir o **ConectaSSH** diretamente pelo menu de aplicativos do seu sistema Linux.
+
+## Onde ficam os arquivos contendo os usuários e as conexões?
+
+*Elas serão armazenadas no diretório `~/conectassh` do diretório home do usuário.*
 
 ## Gerar executável
 
@@ -132,7 +136,7 @@ Agora que o PyInstaller está instalado, podemos gerar o executável diretamente
 2. Rodar o PyInstaller: No terminal do PyCharm, execute o seguinte comando para gerar o executável:
 
 ```
-pyinstaller --onefile --windowed --distpath=./dist --workpath=./build --specpath=./conecta_ssh_v1.spec main.py
+pyinstaller --onefile --windowed --distpath=./dist --workpath=./build --specpath=./conecta_ssh_v1.spec --name=conectassh main.py
 ```
 ### Testar o executável
 1. Vá até a pasta dist criada no seu diretório de trabalho.
@@ -147,4 +151,3 @@ Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
 Saiba mais sobre essa licença em [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
 
 O ícone utilizado neste projeto foi criado por [Freepik](https://www.freepik.com) e está disponível sob a licença "Free PNG".
-

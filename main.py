@@ -15,7 +15,7 @@ from cryptography.hazmat.backends import default_backend
 VERSAO_SISTEMA = "1.0.0"
 
 # Diretório para armazenar os arquivos dos usuários
-USER_DIR = 'users'
+USER_DIR = 'conectassh'
 if not os.path.exists(USER_DIR):
     os.makedirs(USER_DIR)
 
