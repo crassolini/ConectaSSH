@@ -28,26 +28,25 @@
 
 ### 1. Clone o repositório
 
-```bash
+```
 git clone https://github.com/seu-usuario/conectassh.git
 cd conectassh
 ```
-### *Se preferir, já existe um executável pronto para ser executado no diretório `dist` do projeto.*
+
+⚠️ Se você está usando Linux com GNOME, pode simplesmente rodar o executável em `dist/` sem instalar dependências!
 
 ### 2. Crie um ambiente virtual (opcional, mas recomendado)
 
 ```
+# crie o ambiente virtual
 python3 -m venv venv
 source venv/bin/activate  # ou: source ./venv/bin/activate
-```
 
-### 3. Instale as dependências
-
-```
+# Instale as dependências
 pip install -r requirements.txt
 ```
 
-### Se você ainda não tem o sshpass instalado, instale com:
+### 3. Se você ainda não tem o sshpass instalado, instale com:
 
 ```
 sudo apt install sshpass
@@ -58,6 +57,47 @@ sudo apt install sshpass
 ```
 python3 main.py
 ```
+
+## 🧩 Criando um Atalho Gráfico no Linux
+
+### 1. Crie o atalho .desktop
+
+```
+nano ~/.local/share/applications/conectassh.desktop
+```
+
+### 2. Cole o conteúdo abaixo:
+
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ConectaSSH
+Comment=Gerenciador gráfico de conexões SSH seguras
+Exec=/CAMINHO/ABSOLUTO/DO/EXECUTAVEL
+Icon=/CAMINHO/DO/ICONE/conectassh.png
+Terminal=false
+Categories=Utility;Network;
+StartupNotify=true
+```
+
+### 3. Ajuste o caminhos
+ 
+* Substitua Exec= com o caminho real do executável (dist/main)
+* Substitua Icon= com o caminho do ícone .png ou .svg
+
+### 4. Torne o atalho executável
+
+```
+chmod +x ~/.local/share/applications/conectassh.desktop
+```
+
+### 5. Atualize os atalhos
+
+```
+update-desktop-database ~/.local/share/applications
+```
+Agora você poderá abrir o **ConectaSSH** diretamente pelo menu de aplicativos do seu sistema Linux.
 
 ## Gerar executável
 
@@ -100,3 +140,8 @@ pyinstaller --onefile --windowed --distpath=./dist --workpath=./build --specpath
 2. Você encontrará o arquivo executável (no caso do Windows, será nome_do_seu_arquivo.exe; no Linux/Mac será apenas nome_do_seu_arquivo).
 
 3. Teste o executável clicando nele para garantir que tudo está funcionando corretamente, sem a necessidade do Python ou bibliotecas externas instaladas.
+
+## 📄 Licença
+
+Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).  
+Saiba mais sobre essa licença em [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
