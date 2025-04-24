@@ -100,11 +100,3 @@ pyinstaller --onefile --windowed --distpath=./dist --workpath=./build --specpath
 2. Você encontrará o arquivo executável (no caso do Windows, será nome_do_seu_arquivo.exe; no Linux/Mac será apenas nome_do_seu_arquivo).
 
 3. Teste o executável clicando nele para garantir que tudo está funcionando corretamente, sem a necessidade do Python ou bibliotecas externas instaladas.
-
-# ℹ️ Sobre
-
-* Nome do Programa: ConectaSSH
-* Versão: 1.0.0
-* Autor: Cristian
-* Ano: 2025
-* Licença: MIT
